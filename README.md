@@ -6,10 +6,13 @@ Before to start you'll need to clone/download this package locally and then run 
 ```bash
 $ composer install
 ```
+```bash
+$ php artisan vendor:publish
+```
 
 ## Usage
 
-`env('MEDIA_STORAGE_DRIVER', 's4')` handles the disk `s3` or `public`
+`env('MEDIA_STORAGE_DRIVER', 's3')` handles the disk `s3` or `public`
 
   
 ``` use Pagevamp\Processor;

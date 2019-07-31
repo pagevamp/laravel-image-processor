@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Storage;
 use Intervention\Image\ImageManager;
 use Pagevamp\Resizer\Resizer;
 use Pagevamp\Uploader\Uploader;
+use Pagevamp\Parser\ImageParser;
 
 class Processor
 {

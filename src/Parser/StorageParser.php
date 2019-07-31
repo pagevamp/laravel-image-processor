@@ -14,7 +14,6 @@ class StorageParser
     {
         $this->fileName = $fileName;
 
-//        $this->storage = app(Storage::class);
         $this->storage = Storage::disk(Config::get('storage.driver.media'));
 
     }
