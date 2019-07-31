@@ -1,0 +1,40 @@
+{
+  "name": "ujwaldhakal/image-processor",
+  "description": "Package for uploading / resizing images into disk",
+  "type": "library",
+  "version": "1.0",
+  "require": {
+    "laravel/framework": "5.8.*",
+    "intervention/image": "^2.5"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^2.12",
+    "orchestra/testbench": "^3.5"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ujwal Dhakal"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Pagevamp\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Pagevamp\\": "src/",
+      "Tests\\": "tests/"
+    }
+  },
+
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Pagevamp\\Providers\\ProcessorServiceProvider"
+      ]
+
+    }
+  }
+}
