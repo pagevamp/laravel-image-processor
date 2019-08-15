@@ -3,3 +3,5 @@ composer.lock
 phpunit.xml
 node_modules/
 .idea
+docker-compose.yml
+.phpunit.result.cache
