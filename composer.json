@@ -2,7 +2,6 @@
   "name": "ujwaldhakal/image-processor",
   "description": "Package for uploading / resizing images into disk",
   "type": "library",
-  "version": "1.0",
   "require": {
     "laravel/framework": "5.8.*",
     "intervention/image": "^2.5"
