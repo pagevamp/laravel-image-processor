@@ -49,4 +49,4 @@ $processor->getResizedImages()->each(function ($resizedImage){
 
 <a href="https://codeclimate.com/github/ujwaldhakal/image-processor/maintainability"><img src="https://api.codeclimate.com/v1/badges/4a3e5545d7d1bed95506/maintainability" /></a>
 
-[![Build Status](https://travis-ci.com/ujwaldhakal/image-processor.svg?branch=master)](https://travis-ci.com/ujwaldhakal/image-processor)
+[![wercker status](https://app.wercker.com/status/a11686d82a657228100cdd2886bc5b63/s/master "wercker status")](https://app.wercker.com/project/byKey/a11686d82a657228100cdd2886bc5b63)

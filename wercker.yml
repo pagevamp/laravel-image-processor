@@ -1,0 +1,25 @@
+box:
+  id: pagevamp/php-test:72-cli
+  cmd: /bin/sh
+command-timeout: 40
+build:
+  steps:
+    - script:
+        name: cache composer dependencies
+        code: export COMPOSER_CACHE_DIR="$WERCKER_CACHE_DIR/composer" && mkdir -p $COMPOSER_CACHE_DIR
+    - script:
+        name: copy vendor from cache
+        code: |
+          [ -d $COMPOSER_CACHE_DIR/vendor ] && cp -Rf $COMPOSER_CACHE_DIR/vendor vendor || echo 'Cached vendor not found'
+    - script:
+        name: install dependencies
+        code: composer install --no-interaction --prefer-dist
+    - script:
+        name: copy vendor to cache
+        code: cp -Rf vendor $COMPOSER_CACHE_DIR
+    - script:
+        name: fix sym links
+        code: ln -sf ../phpunit/phpunit/phpunit vendor/bin/phpunit && ln -sf ../brianium/paratest/bin/paratest vendor/bin/paratest
+    - script:
+        name: run phpunit
+        code: vendor/bin/phpunit

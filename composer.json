@@ -2,7 +2,6 @@
   "name": "pagevamp/laravel-image-processor",
   "description": "Package for uploading / resizing images into disk. Tested with s3/local & laravel 5.8",
   "type": "library",
-  "license": "MIT",
   "require": {
     "laravel/framework": "5.*",
     "intervention/image": "^2.5"
