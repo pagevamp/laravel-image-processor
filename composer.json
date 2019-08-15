@@ -1,9 +1,10 @@
 {
-  "name": "ujwaldhakal/image-processor",
-  "description": "Package for uploading / resizing images into disk",
+  "name": "pagevamp/laravel-image-processor",
+  "description": "Package for uploading / resizing images into disk. Tested with s3/local & laravel 5.8",
   "type": "library",
+  "license": "MIT",
   "require": {
-    "laravel/framework": "5.8.*",
+    "laravel/framework": "5.*",
     "intervention/image": "^2.5"
   },
   "require-dev": {
@@ -13,7 +14,8 @@
   "license": "MIT",
   "authors": [
     {
-      "name": "Ujwal Dhakal"
+      "name": "Ujwal Dhakal",
+      "email": "kevin.ujwal@gmail.com"
     }
   ],
   "autoload": {
@@ -27,13 +29,11 @@
       "Tests\\": "tests/"
     }
   },
-
   "extra": {
     "laravel": {
       "providers": [
         "Pagevamp\\Providers\\ProcessorServiceProvider"
       ]
-
     }
   }
 }
